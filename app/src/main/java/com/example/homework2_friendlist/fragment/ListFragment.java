@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.homework2_friendlist.Message;
-import com.example.homework2_friendlist.MyAdapter;
 import com.example.homework2_friendlist.R;
+import com.example.homework2_friendlist.adapter.MyAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

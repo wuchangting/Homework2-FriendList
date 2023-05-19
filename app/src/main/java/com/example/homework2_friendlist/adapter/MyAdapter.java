@@ -1,4 +1,4 @@
-package com.example.homework2_friendlist;
+package com.example.homework2_friendlist.adapter;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.homework2_friendlist.Message;
+import com.example.homework2_friendlist.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
