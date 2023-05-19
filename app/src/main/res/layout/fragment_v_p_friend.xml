@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    tabMode设置tab模式
+        fixed：固定，不可滑动，平均分配长度，默认模式
+        scrollable:可滑动，5个以下靠左固定，5个以上可滑动
+        auto：自动选择是否滑动，5个以下居中固定，以上滑动
+        tabGravity设置tab位置
+        start:居左 fill:平均分配，铺满屏幕宽度 center：居中-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="621dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.viewpager.widget.ViewPager>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+</LinearLayout>
